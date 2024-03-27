@@ -42,14 +42,12 @@ const headers = [
 
 const LinkList = ({ url, homepageUrl }) => (
   <u1 style={{ display: 'flex' }}>
-    <li>
-      <Link href={url}>GitHub</Link>
-    </li>
+    <Link href={url}>GitHub</Link>
+    {/*Removed <li></li> to avoid list bullets*/}
     {homepageUrl && (
-      <li>
-        <span>&nbsp;|&nbsp;</span>
-        <Link href={homepageUrl}>Homepage</Link>
-      </li>
+      <span>
+        &nbsp;|&nbsp;<Link href={homepageUrl}>Homepage</Link>
+      </span>
     )}
   </u1>
 );
