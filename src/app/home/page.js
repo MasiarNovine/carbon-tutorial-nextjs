@@ -28,9 +28,9 @@ export default function LandingPage() {
         </h1>
       </Column>
       {/* Tabs */}
-      <Column lg={12} md={8} sm={4} className="landing-page__r2">
+      <Column lg={16} md={8} sm={4} className="landing-page__r2">
         <Tabs defaultSelectedIndex={0}>
-          <TabList className="tabs-group" aria-label="Tab navigation">
+          <TabList className="tabs-group" aria-label="Page navigation">
             <Tab>About</Tab>
             <Tab>Design</Tab>
             <Tab>Develop</Tab>
@@ -44,7 +44,7 @@ export default function LandingPage() {
                   sm={4}
                   className="landing-page__tab-content"
                 >
-                  <h2 className="landing-page__subheading">What is Carbon</h2>
+                  <h2 className="landing-page__subheading">What is Carbon?</h2>
                   <p className="landing-page__p">
                     Carbon is IBM´s open-source design system for digital
                     products and experiences. With the IBM Design Language as
@@ -93,14 +93,6 @@ export default function LandingPage() {
             </TabPanel>
           </TabPanels>
         </Tabs>
-        <Grid className="tabs-group-content">
-          <Column lg={4} md={7} sm={4} className="landing-page__tab-content">
-            7/16
-          </Column>
-          <Column md={4} lg={{ span: 8, offset: 7 }} sm={4}>
-            8/16
-          </Column>
-        </Grid>
       </Column>
       <Column lg={16} md={8} sm={4} className="landing-page__r3">
         <Grid>
